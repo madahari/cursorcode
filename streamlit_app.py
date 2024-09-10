@@ -5,8 +5,8 @@ import time
 from openai import OpenAI
 import threading
 
-# OpenAI 클라이언트 설정
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+# OpenAI API 키 설정
+openai_api_key = st.secrets["openai"]["api_key"]
 
 # 세션 상태 초기화
 if 'news_sites' not in st.session_state:
